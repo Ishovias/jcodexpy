@@ -10,9 +10,9 @@ public class Encriptador {
 
 		this.codificado = "";
 
-		this.llave = new char[42];
+		this.llave = new char[42]; //eran 42
 		this.llave2 = new char[42];
-
+		
 		String llaveBruta = ("abcdefghijklmnopqrstuvwxyz0123456789@#$&?!");
 
 		int x = 42;

@@ -98,6 +98,16 @@ public class JCodexpyWindow {
 		frmJcodexpy.getContentPane().add(botonCodificar);
 		
 		botonCopiar = new JButton("Copiar");
+		botonCopiar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				String textoCodificado = txtResultado.getText();
+				
+				CopiadorTexto copiadorTexto = new CopiadorTexto();
+				copiadorTexto.copiar(textoCodificado);
+				
+			}
+		});
 		botonCopiar.setBounds(10, 104, 152, 23);
 		frmJcodexpy.getContentPane().add(botonCopiar);
 		
